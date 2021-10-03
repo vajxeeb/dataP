@@ -12,6 +12,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "datapumps": "^0.5.1",
+    "excel-date-to-js": "^1.1.4",
     "excel4node": "^1.7.2",
     "exceljs": "^4.3.0",
     "express": "^4.17.1",

@@ -105,24 +105,17 @@
 const express = require("express");
 const app = express();
 const initRoutes = require("./routes/lottery.route");
+
 global.__basedir = __dirname + "/";
 
 app.use(express.urlencoded({ extended: true }));
+
 initRoutes(app);
-//homepage rout
-app.get("/", (req, res) => {
-  return res.send('pppppp')
-});
-
-const date = new Date()
-
-const mydate = date.getDate() +'-'+date.getMonth()+'-'+date.getFullYear();
-
-console.log(mydate)
 
 
 
-let port = 8080;
+
+const port = 8080;
 app.listen(port, () => {
   console.log(`Running at localhost:${port}`);
 });
